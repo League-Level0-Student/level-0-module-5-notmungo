@@ -50,21 +50,24 @@ public class AmazingRings extends PApplet {
 
     @Override
     public void setup() {
-
+    	noFill();
     }
 
     @Override
     public void draw() {
-    	noFill();
+    	
     	
     	 int width = 50;
+    	 int x = 250 ;
+    	 int speed = 8 ;
     	
     	for(int i = 1 ; i <= 20;i++){
-    		if(i % 2 ==0); {
+    		if(i % 2 ==0) {
     			
-    			ellipse(300,200,width,75);
-    			  ellipse(250,200,width,75);
-    			  width = width + 5 ;
+    			//ellipse(300,200,width,75);//
+    			  ellipse(x,200,width,75);
+    			  width = width + 8 ;
+    			  x += speed;
     		}
     		
     	}
