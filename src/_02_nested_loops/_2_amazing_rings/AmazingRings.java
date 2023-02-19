@@ -52,24 +52,28 @@ public class AmazingRings extends PApplet {
     public void setup() {
     	noFill();
     }
-
+    int x = 250 ;
+    int speed = 8 ;
     @Override
     public void draw() {
     	
+    	 background(255,255,255);
+    	 int width = 100;
+    	 
+    	 
     	
-    	 int width = 50;
-    	 int x = 250 ;
-    	 int speed = 8 ;
-    	
-    	for(int i = 1 ; i <= 20;i++){
+    	for(int i = 1 ; i <= 100;i++){
     		if(i % 2 ==0) {
     			
-    			//ellipse(300,200,width,75);//
-    			  ellipse(x,200,width,75);
-    			  width = width + 8 ;
-    			  x += speed;
+    			  ellipse(x,280,width,width);
+    			  width = width - 10;
+    			  
     		}
-    		
+    			
+    	}
+    	x+= speed;
+    	if (x > 800 - 100/2 || x < 4/2) {
+    		speed = -speed;
     	}
     }
 

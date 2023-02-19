@@ -11,10 +11,27 @@ public class Nested {
 		}
 		
 		 
-			 for (int j = 100; j > 2; j++) {
-				 if(j % 2 == 0);
+			 for (int j = 2; j <= 100; j+=2) {				 
 			 System.out.println(j);
 			 }
-		 
+			 for (int j = 1; j<= 99; j+=2) {
+			 System.out.println(j);
+		 }
+	         for (int j = 1; j<= 500; j++) {
+	         if (j % 2 ==0) {
+	        	 System.out.println(j + " is even");
+	        	 
+	         }
+	         else {
+	        	 System.out.println(j + " is odd");
+	        	 
+	         }
+	        
+	        	 
+	         }
+	         for(int j = 0; j <= 777; j+=7) {
+	        	 System.out.println(j);
+	        	 
+	         }
 	}
 }
