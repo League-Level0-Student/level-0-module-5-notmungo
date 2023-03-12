@@ -11,8 +11,26 @@ public static void main(String[] args) {
 	rob.setX(350);
 	rob.setY(400);
 	rob.penDown();
-	JOptionPane.showInputDialog("What shape do you want?");
-	if
+	String s = JOptionPane.showInputDialog("What shape do you want?");
+	String b = JOptionPane.showInputDialog("What color do you want? You can pick from blue, red, green");
+	if (b.equals("red")) {
+		rob.setPenColor(255,0,0) ;
+	}
+	else if (b.equals("blue")) {
+		rob.setPenColor(0,0,255);
+	}
+	else if (b.equals("green")) {
+		rob.setPenColor(0,255,0);
+	}
+    if (s.equals("circle")) {
+    	drawCircle();
+    }
+    else if (s.equals("square")) {
+    	drawSquare();
+    }
+    else if (s.equals("triangle")) {
+    	drawTriangle();
+    }
 	drawSquare();
 	drawTriangle();
 	drawCircle();
