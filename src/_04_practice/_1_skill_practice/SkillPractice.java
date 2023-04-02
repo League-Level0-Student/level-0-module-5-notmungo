@@ -13,7 +13,7 @@ public static void main(String[] args) {
 	skills.skill4();
 	skills.skill5();
 }
-void skill1(){
+	void skill1(){
 String d = JOptionPane.showInputDialog("How many dimes do you have?");
 int dimes = Integer.parseInt(d);
 int dCents = dimes*10;
@@ -26,21 +26,21 @@ if (height1 <= 36) {
 }
 
 }
-void skill2() {
+	void skill2() {
 	for(int i = 1; i<=30; i+= 3) {
 		System.out.println(i);
 	}
 }
-void skill3() {
+	void skill3() {
 int random = new Random().nextInt(20)+1;
 System.out.println(random);
 int random1 = new Random().nextInt(10)+1;
 System.out.println(random1);
 JOptionPane.showMessageDialog(null, random -= random1);
 }
-void skill4() {
+	void skill4() {
 String sand = JOptionPane.showInputDialog("What city do you live in?");
-if (sand == "San diego") {
+if (sand.equals("San Diego") ) {
 	JOptionPane.showMessageDialog(null, "You live in Americas finest city!");
 }
 else {
@@ -60,7 +60,8 @@ else if(cars > 1) {
 	JOptionPane.showMessageDialog(null, "You have " + wheels);
 }
 }
-void skill5() {
-	
+	void skill5() {
+String School = JOptionPane.showInputDialog("What school do you go to?");
+JOptionPane.showMessageDialog(null, School + " is a fantastic school!");
 }
 }
